@@ -15,12 +15,27 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <meta name="viewport" content="width=device-width">
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <style>
-      @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+      @import url(http://cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css);
+      @import url(https://cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothiclight.css);
     </style>
   </head>
 
-  <body style="font-family: 'Noto Sans KR', sans-serif;">
+  <body style="font-family: 'Nanum Barun Gothic'; height:100vh; background-color:#cffded;">
+    <nav>
+      <div class="nav-wrapper" style="background-color:white;">
+        <a href="/welcome/home" class="brand-logo">
+            <img src="/assets/lookie_logo.png" style="width: 40%; display:block; margin:auto;">
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="https://www.sklookie.com/">루키커뮤니티</a></li>
+          <li><a href="https://www.sklookie.com/club/clubView.do?clubSeq=4">경희대학교 루키</a></li>
+          <li><a href="#">준비중입니다.</a></li>
+        </ul>
+      </div>
+    </nav>
     <%= yield %>
   </body>
 </html>

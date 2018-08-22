@@ -1,0 +1,40 @@
+<div class="container-fluid" style="background-color:rgb(196,255,238); height:92.5vh"> <!-- 배경 생 sRGB-->
+    <div class="col-12 header">
+        <img src="/assets/header.png" style="display:block; width:100%;">
+    </div>
+    <div class="wrap" style="">
+        <br>
+        <br>
+        <br>
+        <div class="row" style="text-align:center; height:30vh">
+            <span id="typed" style="color:white; text-shadow: 2px 2px rgba(0, 0, 0, .30); font-family: 'Nanum Barun Gothic Light'; font-size:200%;"></span>
+        </div>
+        <div class="button_wrap" style="text-align:center; height:20vh">
+            <a href="/welcome/chohaeng" class="waves-effect waves-light btn-small" style="background-color:black">초행</a>
+            <a href="/welcome/meinz" class="waves-effect waves-light btn-small" style="background-color:black">마인즈</a>
+        </div>
+    </div>
+    <div class="col-12 footer">
+        <img src="/assets/footer.png" style="display:block; width:100%;">
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        // Can also be included with a regular script tag
+
+        var typed = new Typed('#typed', {
+            strings: ["경희대학교 루키", "KHU lookie", "초행", "마인즈"],
+            typeSpeed: 200,
+            backSpeed: 100,
+            backDelay: 1000,
+            loop: true,
+        });
+    });
+</script>
+<style>
+.typed-cursor {
+    font-size: 200%;
+    color:white;
+}
+</style>
