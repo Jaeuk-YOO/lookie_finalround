@@ -6,10 +6,30 @@
         <br>
         <br>
         <br>
-        <div class="row" style="text-align:center; height:30vh">
-            <span id="typed" style="color:white; text-shadow: 2px 2px rgba(0, 0, 0, .30); font-family: 'Nanum Barun Gothic Light'; font-size:200%;"></span>
+        <div class="row" style="text-align:center; height:15vh">
+            <span id="typed" style="color:white; text-shadow: 2px 2px rgba(0, 0, 0, .30); font-family: 'Nanum Barun Gothic'; font-size:200%;"></span>
         </div>
+        <div class="row" style="text-align; padding-left:10px; padding-right:10px; color:black; text-shadow: 1px 1px rgba(255, 255, 255);">
+            <div class="align-left-aos" data-aos="zoom-out-right" data-aos-duration="1000" style="text-align:left">
+                <span style="color:black; text-shadow: 1px 1px rgba(255, 255, 255); font-size:5vw">경희대 루키가 바라는 사회혁신 </span>
+            </div>
+            <div class="align-left-aos" data-aos="zoom-out-right" data-aos-duration="1000" style="text-align:left">
+                <br> 경희대 LOOKIE가 생각하는 사회 혁신은 '사소하지만 끊임없는 노력을 통해 시작되는 점진적인 변화'입니다.
+            </div>
+            <br>
+            <div class="align-left-aos" data-aos="zoom-out-right" data-aos-duration="1000" style="text-align:left">
+                혁신은 무언가를 한번에 바꾸어 버리는 것 처럼 보이지만, 실제 혁신은 서로 다른 의견들이 충돌하고 모이며 이루어집니다. <br>
+            </div>
+            <div class="align-left-aos" data-aos="zoom-out-right" data-aos-duration="1000" style="text-align:left">
+                물이 끓을 때에는 100℃ 에서 끓겠지만, 그 이전의 과정이 없었다면 결코 100℃ 까지 온도가 올라갈 수 없었을 것입니다.<br>
+            </div>
+            <div class="align-left-aos" data-aos="zoom-out-right" data-aos-duration="1000" style="text-align:left">
+                <br>언젠가 적절한 온도가 되면 끓어넘치는 물처럼, 모든 사회혁신가들의 끝없는 노력이 언젠가는 사회를 끓어넘치게 하는 혁신이 될 것이라고 생각합니다.
+             </div>
+        </div>
+        <br>
         <div class="button_wrap" style="text-align:center; height:20vh">
+            경희대학교 루키의 프로젝트<br><br>
             <a href="/welcome/chohaeng" class="waves-effect waves-light btn-small" style="background-color:black">초행</a>
             <a href="/welcome/meinz" class="waves-effect waves-light btn-small" style="background-color:black">마인즈</a>
         </div>
@@ -19,12 +39,20 @@
     </div>
 </div>
 
+<div id="typed-strings">
+    <p>경희대학교 루키</p>
+    <p>KHU lookie</p>
+    <p>초행</p>
+    <p>마인즈</p>
+</div>
 <script>
     $(document).ready(function() {
+        AOS.init();
+
         // Can also be included with a regular script tag
 
         var typed = new Typed('#typed', {
-            strings: ["경희대학교 루키", "KHU lookie", "초행", "마인즈"],
+            stringsElement: '#typed-strings',
             typeSpeed: 200,
             backSpeed: 100,
             backDelay: 1000,
